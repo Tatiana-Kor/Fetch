@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/fonts/pt-sans-v11-cyrillic_latin-regular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Фетч — мультибрендовый магазин модной одежды. Следим за трендами и часто обновляем ассортимент. 
+    Доставляем по Москве за день, по России — за неделю.">
+    <title>Фетч - обувь</title>
+</head>
+
+<body>
+
+    <header class="header-catalog">
+        {% include 'blocks/header.twig' %}
+    </header>
+    <main class="catalog" itemscope itemtype = "http://schema.org/Product">
+        <div class="catalog__title-block">
+            <div class="catalog__title-wrapper container">
+                <h1 class="catalog__title main-title" itemprop = "name">Обувь</h1>
+            </div>
+        </div>
+        <section class="catalog__items">
+            <div class="catalog__items-wrapper container" itemprop = "hasOfferCatalog" itemscope itemtype = "http://schema.org/OfferCatalog">
+                {% set folder = 'shoes' %}
+                {% set category = 'Кроссовки' %}
+                {% set items = [
+                    { srcset: '01', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: 'item01.html'},
+                    { srcset: '02', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: 'item01.html'},
+                    { srcset: '03', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: 'item01.html'},
+                    { srcset: '04', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '05', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '06', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '07', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '08', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '09', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '10', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '11', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '12', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '13', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '14', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '15', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                    { srcset: '16', price: '92 000', name: 'Maison Margiela Fusion Low Sneakers', href: '#'},
+                ] %}
+
+                {% for item in items %} 
+                    {% include 'blocks/catalog-item.twig' with items %}
+                {% endfor %} 
+                 
+            </div>
+        </section>
+        <div class="catalog__pagination pagination">
+            {% set pages = 12 %} {% set current = 1 %}
+            {% include 'blocks/pagination.twig' %}
+        </div>
+    
+    </main>
+    <footer class="footer footer--catalog">
+        {% include 'blocks/footer.twig' %}
+    <footer class="footer">
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/popup.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

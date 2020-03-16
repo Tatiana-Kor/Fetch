@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/fonts/pt-sans-v11-cyrillic_latin-regular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Фетч — мультибрендовый магазин модной одежды. Следим за трендами и часто обновляем ассортимент. 
+    Доставляем по Москве за день, по России — за неделю.">
+    <title>Фетч - главная</title>
+</head>
+
+<body >
+    <header class="header js-header">
+        {% include 'blocks/header.twig' %}
+    </header>
+    <main class="main">
+    
+        {% include 'blocks/promo-slider.twig' %}
+        
+        <section class="main-nav">
+            <div class="main-nav__wrapper container">
+                <div class="main-nav__about-us" itemscope itemtype="https://schema.org/Organization">
+                    <p><b itemprop = "name">Фетч</b> — мультибрендовый магазин модной одежды.</p>
+                    <p>Следим за трендами и часто обновляем ассортимент.</p>
+                    <p>Доставляем по Москве за день, по России — за неделю.<meta itemprop = "areaServed" itemscope itemtype = "https://schema.org/City" content="Москва, все города России"></p>
+                </div>
+                <nav class="main-nav__block navigation">
+                    {% include 'blocks/navigation.twig' %}
+                </nav>
+            </div>
+        </section>
+        <section class="news">
+            {% include 'blocks/news.twig' %}
+        </section>
+    </main>
+    <footer class="footer">
+        {% include 'blocks/footer.twig' %}
+    <footer>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/popup.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

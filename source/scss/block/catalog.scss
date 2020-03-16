@@ -1,0 +1,110 @@
+.header-catalog {
+    margin-bottom: 10px;  
+}
+
+.catalog__items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-top: -62px;
+
+    @media(max-width: $desktop-width) {
+        justify-content: space-between;
+        margin-top: -80px;
+    }
+}
+
+.catalog__title-block {
+    background-color: $bg-secondary;
+    position: relative;
+    z-index: 1;
+    padding-top: 24px;
+    padding-bottom: 95px;
+
+    @media(max-width: $desktop-width) {
+        padding-top: 16px;
+        padding-bottom: 102px;
+    }
+}
+
+.catalog__title {
+    color: $text-secondary;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    max-width: 240px;
+
+    @media(max-width: $desktop-width) {
+        max-width: 136px;
+        margin-right: 0;
+    }
+}
+
+.catalog__items-wrapper .catalog__item{
+    margin-bottom: 32px;
+    
+    @media(max-width: $desktop-width) {
+        margin-bottom: 14px;
+    }
+}
+
+.catalog__items .catalog__item-image {
+    width: 240px;
+    height: auto;
+    margin-bottom: 3px;
+
+    @media(max-width: $desktop-width) {
+        width: 136px;
+        margin-bottom: 8px;
+    }
+}
+
+.catalog__items .catalog__item-name {
+    @media(max-width: $desktop-width) {
+        font-size: 13px;
+    }
+}
+
+.catalog__item-name {
+    font-weight: 700;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 240px;
+        height: 350px;
+        top: -250px;
+        left: 0;
+
+        @media(max-width: $desktop-width) {
+            width: 136px;
+            height: 260px;
+            top: -145px;
+        }
+    }
+}
+
+.catalog__items .catalog__item-description {
+    max-width: 164px;
+
+    @media(max-width: $desktop-width) {
+        max-width: 136px;
+        line-height: 17px;
+    }
+}
+
+.catalog__item-category {
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.catalog__item-price {
+    font-weight: 700;
+}

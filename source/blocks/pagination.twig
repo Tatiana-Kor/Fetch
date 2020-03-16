@@ -1,0 +1,10 @@
+<div class="pagination__wrapper container">
+    <p class="pagination__title">Страницы</p>
+    <ul class="pagination__list">
+        {% for i in 1..pages %}
+            <li class="pagination__item">
+                <a href="#" class="pagination__link {% if i ==  current %}pagination__link--active {% endif %}">{{i}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

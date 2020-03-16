@@ -1,0 +1,237 @@
+.item-card {
+    margin-top: 32px;
+    margin-bottom: 45px;
+
+    @media(max-width: $desktop-width) {
+        margin-top: 25px;
+        margin-bottom: 42px;
+    }
+}
+
+.item-card__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+    }
+}
+
+
+.item-card__description {
+    max-width: 420px;
+
+    @media(max-width: $desktop-width) {
+        order: 1;
+    }
+}
+
+.item-card__title {
+    margin-bottom: 8px;
+}
+
+.item-card__category {
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 32px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 16px;
+    }
+}
+
+.item-card__form {
+    background-color: $bg-blocks;
+    width: 450px;
+    transform: translateX(-24px);
+    padding: 24px 24px 32px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    @media(max-width: $desktop-width) {
+        width: 320px; 
+        padding: 24px 16px; 
+        transform: translateX(-16px);
+        margin-bottom: 24px;
+    }
+}
+
+.item-card__parameter {
+    display: flex;
+    margin-bottom: 22px;
+
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+}
+
+.item-card__parameter-values {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.item-card__parameter-value:not(:last-child) {
+    margin-right: 12px;
+}
+
+.item-card__parameter-name {
+    align-self: center;
+    margin-bottom: 0px;
+    @media(max-width: $desktop-width) {
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+}
+
+.item-card__parameter--size .item-card__parameter-name {
+    margin-right: 26px; 
+}
+
+.item-card__parameter--color .item-card__parameter-name {
+    margin-right: 68px; 
+}
+
+.item-card__parameter--color .item-card__parameter-values {
+    @media(max-width: $desktop-width) {
+    flex-direction: column;
+    }
+}
+
+
+.item-card__parameter label {
+    background-color: #FBFBFB;
+    border: 1px solid #DDD;
+    border-radius: 8px;  
+    padding: 5px;
+    color: #666;
+    display: block;
+    text-align: center;
+    width: 142px;
+    box-sizing: border-box;
+
+    &:hover {
+        border-color:#666;
+    }
+}
+
+.item-card__parameter--size label {
+    display: block;
+    box-sizing: border-box;
+    width: 42px;
+    text-align: center;
+}
+
+.item-card__parameter input {
+    display: none;
+}
+
+.item-card__parameter input:checked + label {
+    background-color: #666;
+    border-color: #666;
+    color: #FFF; 
+}
+
+.item-card__sizes-table {
+    font-size: 13px;
+    line-height: 17px;
+}
+
+
+.item-card__btn-wrapper button {
+    margin-top: 40px;
+    padding: 10px 22px;
+    font-size: 16px;
+
+    line-height: 21px;
+}
+
+.item-card__properties {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-card__form a {
+    &:hover {
+        color: $link-hover;
+        @include underline($link-hover, 2px, 1px);
+    }
+}
+
+.item-card__property {
+    margin-bottom: 16px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 10px;
+    }
+}
+
+.item-card__property:first-child {
+    margin-right: 32px;
+
+    @media(max-width: $desktop-width) {
+        margin-right: 22px;
+    }
+}
+
+
+.item-card__property-title {
+    color: #AFAFAF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 2px;
+}
+
+.item-card__property-value {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.item-card__property-value li {
+    position: relative;
+    padding-left: 16px;
+}
+.item-card__property-value li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: $text-primary;
+    height: 1px;
+    width: 11px;
+}
+
+.item-recommend__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 26px;
+}
+
+.item-recommend {
+    margin-bottom: 25px;
+}
+
+.test {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-popup {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    background: #FFF;
+    padding: 16px 0px 32px;
+    color: $text-primary;
+    
+}

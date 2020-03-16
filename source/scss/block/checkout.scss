@@ -1,0 +1,234 @@
+.main-checkout {
+    padding-top: 32px;
+
+    @media(max-width: $desktop-width) {
+        padding-top: 25px;
+    }
+}
+
+.main-checkout__block {
+    margin-top: 32px;
+
+    @media(max-width: $desktop-width) {
+        margin-top: 25px;
+    }
+
+    &--incomplete {
+    
+        display: flex;
+    
+        @media(max-width: $desktop-width) {
+            flex-direction: column;
+            margin-top: 44px;
+        }
+    }
+}
+
+.main-checkout__cart {
+    padding-right: 90px;
+
+    @media(max-width: $desktop-width) {
+        padding-right: 0px;
+    }
+}
+
+.main-checkout__cart-items {
+    padding-right: 95px;
+
+    @media(max-width: $desktop-width) {
+        padding-right: 0px;
+    }
+}
+
+.main-checkout__cart-items .catalog__item-category {
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    @media(max-width: $desktop-width) {
+        margin-top: 3px;
+        margin-bottom: 4px;
+    }
+}
+
+.main-checkout__cart-items .catalog__item {
+    flex-direction: row;
+    max-width: 340px;
+    margin-bottom: 18px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 4px;
+    }
+}
+
+.main-checkout__cart-items .catalog__item-image {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+
+    @media(max-width: $desktop-width) {
+        width: 90px;
+        height: 90px;
+        margin-right: 8px;
+    }
+} 
+
+
+.main-checkout__cart-items a::before {
+    top: 0px;
+    left: -170px;
+    height: 160px;
+    width: 340px;
+
+    @media(max-width: $desktop-width) {
+        left: -100px;
+        width: 270px;
+        height: 90px;
+    }
+}
+
+.main-checkout__cart-total {
+    text-align: end;
+    margin-top: 37px;
+    position: relative;
+
+    @media(max-width: $desktop-width) {
+        text-align: start;
+        margin-bottom: 48px;
+        margin-top: 19px;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 488px;
+        height: 1px;
+        background-color: #DDD;
+        bottom: 65px;
+        left: 0px;
+        transform: translateX(-4%);
+
+        @media(max-width: $desktop-width) {
+            width: 320px;
+            
+        }
+    }
+}
+
+.main-checkout__cart-sum {
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.main-checkout__cart-delivery {
+    font-size: 13px;
+    line-height: 17px;
+    color: $text-additional;
+}
+
+
+
+.footer-checkout__wrapper {
+    display: flex;
+    font-size: 13px;
+    line-height: 17px;
+    opacity: 0.45;
+    padding-top: 60px;
+    padding-bottom: 34px;
+
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 56px;
+        padding-bottom: 72px;
+    }
+}
+
+.footer-checkout__wrapper > * {
+    margin-right: 24px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 16px;
+    }
+}
+
+a.footer-checkout__phone {
+    background-image: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.main-checkout__block--complete > p {
+    display: block;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 16px;
+    }
+}
+
+.main-checkout__wrapper--complete {
+    padding-bottom: 52px;
+
+    @media(max-width: $desktop-width) {
+        padding-bottom: 26px;
+    }
+}
+
+
+.main-checkout__recommend {
+    margin-top: 64px;
+
+    @media(max-width: $desktop-width) {
+        margin-top: 56px;
+    }
+}
+
+.main-checkout__navigation {
+    display: flex;
+
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+    }
+}
+
+.main-checkout__navigation, .main-checkout__complete-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+
+    a {
+       background-image: none; 
+
+       &:hover {
+            color: $link-hover;
+        }
+    }
+}
+
+.main-checkout__navigation-separator {
+    color: #DDD;
+}
+
+
+.main-checkout__recommend .slick-prev {
+    left: -28px;
+
+    @media(max-width: $desktop-width) {
+        left: -10px;
+    }
+}
+
+.main-checkout__recommend .slick-next {
+    right: -28px;
+
+    @media(max-width: $desktop-width) {
+        right: -10px;
+    }
+}

@@ -1,0 +1,96 @@
+<section class="promo-slider js-promo-slider">
+                
+    {% set promo__slider = [
+        { srcset: '01', slogan: 'Reebok Aztrek Double', colortheme: 'light'},
+        { datasrcset: '02', slogan: 'Reebok Aztrek Double', colortheme: 'dark'}, 
+        { datasrcset: '03', slogan: 'Nike ACG: навстречу новым открытиям', mediaAdd: '800px', colortheme: 'dark'},
+        { datasrcset: '04', slogan: 'Nike ACG: навстречу новым открытиям', colortheme: 'dark'}, 
+    ] %}
+
+    {% for slide in promo__slider %}
+        <div class="promo-slider__item" itemscope itemtype="http://schema.org/Product"
+            {% if slide.colortheme %}
+                data-theme="{{slide.colortheme}}"
+            {% endif %}
+        >
+            <picture>
+                <source class="js-lazy" 
+                        media="(max-width: 550px)" 
+                        {% if slide.datasrcset %} 
+                            data-srcset="assets/images/promo/promo-mobile{{slide.datasrcset}}.webp"
+                            srcset="assets/images/placeholder.webp" 
+                            type="image/webp"
+                        {% else %}
+                            srcset="assets/images/promo/promo-mobile{{slide.srcset}}.webp" type="image/webp"
+                        {% endif %}
+                >
+                
+                {% if slide.mediaAdd %} 
+                <source class="js-lazy" 
+                        media="(max-width: {{slide.mediaAdd}})"
+                        {% if slide.datasrcset %} 
+                            data-srcset="assets/images/promo/promo-tablet{{slide.datasrcset}}.webp"
+                            srcset="assets/images/placeholder.webp"
+                            type="image/webp" 
+                        {% else %}
+                            srcset="assets/images/promo/promo-tablet{{slide.srcset}}.webp" type="image/webp"
+                        {% endif %}
+                >
+                {% endif %}
+
+                <source class="js-lazy"   
+                        {% if slide.datasrcset %} 
+                            data-srcset="assets/images/promo/promo{{slide.datasrcset}}.webp"
+                            srcset="assets/images/placeholder.webp"
+                            type="image/webp"
+                        {% else %}
+                            srcset="assets/images/promo/promo{{slide.srcset}}.webp" type="image/webp"
+                        {% endif %}
+                >
+
+                <source class="js-lazy" 
+                        media="(max-width: 550px)"
+                        {% if slide.datasrcset %} 
+                            data-srcset="assets/images/promo/promo-mobile{{slide.datasrcset}}.jpg" 
+                            srcset="assets/images/placeholder.webp"
+                            type="image/jpeg"
+                        {% else %}
+                            srcset="assets/images/promo/promo-mobile{{slide.srcset}}.jpg" type="image/jpeg"
+                        {% endif %}
+                >
+
+                {% if slide.mediaAdd %} 
+                <source class="js-lazy" 
+                        media="(max-width: {{slide.mediaAdd}})"
+                        {% if slide.datasrcset %} 
+                            data-srcset="assets/images/promo/promo-tablet{{slide.datasrcset}}.jpg"
+                            type="image/jpeg"
+                            srcset="assets/images/placeholder.webp"
+                        {% else %} 
+                            srcset="assets/images/promo/promo-tablet{{slide.srcset}}.jpg" type="image/jpeg"
+                        {% endif %}
+                >
+                {% endif %}
+
+                <source class="js-lazy" 
+                        {% if slide.datasrcset %} 
+                            data-srcset="assets/images/promo/promo{{slide.datasrcset}}.jpg"
+                            type="image/jpeg" 
+                            srcset="assets/images/placeholder.webp"
+                        {% else %} 
+                            srcset="assets/images/promo/promo{{slide.srcset}}.jpg" type="image/jpeg"
+                        {% endif %}
+                >
+
+                <img class="promo-slider__image" itemprop="image" src="#" alt="Промо - {{slide.slogan}}" width="auto" height="600">
+            </picture>
+            <div class="container">
+                <div class="promo-slider__slogan-wrapper">
+                    <span class="promo-slider__slogan promo-slider__slogan--desktop" itemprop="slogan">{{slide.slogan}}</span>
+                    <span class="promo-slider__slogan promo-slider__slogan--mobile">Распродажа до &ndash;15%</span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+ </section>

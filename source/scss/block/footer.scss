@@ -1,0 +1,150 @@
+.footer {
+    background-color: $bg-secondary;
+    color: $text-footer;
+}
+
+.footer__top a {
+    color: $text-footer;
+    @include underline($text-footer, 1px, 1px); 
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.footer__wrapper {
+    padding: 32px 0px;
+
+    @media(max-width: $desktop-width) {
+        padding: 32px 16px;
+    }
+}
+
+.footer__top {
+    display: flex;
+
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+    }
+}
+
+.footer__nav {
+    @media(max-width: $desktop-width) {
+        margin-bottom: 23px;
+    } 
+}
+
+.footer .navigation__link {
+    margin-right: 48px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 25px;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+.footer__contacts{
+    max-width: 160px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 18px;
+    }
+}
+
+.footer__contacts > *:not(:first-child) {
+    margin-left: 10px;
+
+    @media(max-width: $desktop-width) {
+        margin-left: 17px;
+    }
+}
+
+a.footer__contacts-fetch {
+    background-image: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.footer__main-links {
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.footer__main-link {
+    margin-bottom: 8px;
+}
+
+a.contacts__phone {
+    background-image: none;
+    font-weight: 700;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer__contacts > p {
+    opacity: 0.75;
+}
+
+.contacts__phone + p {
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.footer__bottom {
+    display: flex;
+
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+}
+
+.footer__bottom > * {
+    font-size: 13px;
+    line-height: 17px;
+    margin-right: 25px;
+    color: $text-additional;
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 15px;
+    }
+}
+
+.footer__bottom span {
+    @media(max-width: $desktop-width) {
+        margin-bottom: 11px;
+    }
+}
+
+.footer__bottom a {
+    @include underline($text-additional, 1px, 1px); 
+
+    &:hover {
+        color: $text-footer;
+        @include underline($text-footer, 2px, 1px); 
+    }
+
+    @media(max-width: $desktop-width) {
+        margin-bottom: 13px;
+    }
+}
+
+.footer .navigation__list {
+    @media(max-width: $desktop-width) {
+        flex-direction: column;
+    }
+}
+
+.footer .navigation__sublist {
+    @media(max-width: $desktop-width) {
+        margin-left: 17px;
+    }
+}
+

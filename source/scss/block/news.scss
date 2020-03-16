@@ -1,0 +1,119 @@
+.news__wrapper {
+    display: grid;
+    grid-template-areas:
+        "first third"
+        "second third"
+        "fourth fourth";
+    grid-template-columns: 464px 655px;
+    grid-gap: 25px 17px;
+    padding-bottom: 70px;
+
+    @media(max-width: $desktop-width) {
+        grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "fourth";
+        grid-template-columns: 100%;
+        grid-gap: 0;
+        padding: 0;
+    }
+}
+
+.news__item {
+    padding-top: 24px;
+    display: block;
+    @media(max-width: $desktop-width) {
+        overflow: hidden; 
+    }
+    background-image: none;
+
+    &:hover {background-image: none;}
+}
+
+.news__item:hover {
+    .news__item-title {@include underline($link-hover, 4px, 2px);}
+}
+
+.news__item--first {
+    background-color: #FFA88C;
+    grid-area: first;
+
+    @media(max-width: $desktop-width) {
+        padding-bottom: 40px;
+    }
+    
+}
+
+.news__item--first img {
+    object-fit: cover;
+    transform: rotate(-8deg) translateX(28px) translateY(-6px);
+
+    @media(max-width: $desktop-width) {
+        transform: rotate(-8deg) translateX(-55px) translateY(8px);
+    }
+}
+
+.news__item--second {
+    background-color: #7482FF;
+    grid-area: second;
+    color: $text-secondary;
+    padding-bottom: 42px;
+}
+
+.news__item--third {
+    background-color: #FFE9FD;
+    grid-area: third;
+}
+
+.news__item--third img {
+    transform: translateX(32px);
+    margin-top: 20px;
+
+    @media(max-width: $desktop-width) {
+        transform: translateX(12px);
+    }
+}
+
+.news__item--fourth {
+    grid-area: fourth;
+    background-color: #f2f2f2;
+}
+
+.news__item--fourth img {
+    margin-top: 32px;
+    margin-bottom: 48px;
+
+    @media(max-width: $desktop-width) {
+        transform: rotate(30deg) translateX(-75px) translateY(70px);
+        margin-top: 90px;
+        margin-bottom: 145px;
+    }
+}
+
+.news__item-titles {
+    margin-left: 16px;
+}
+
+.news__item-title {
+    font-size: 32px;
+    line-height: 41px;
+    font-weight: 700;
+    @include underline($text-primary, 4px, 2px);
+    display: inline;
+}
+
+.news__item--second .news__item-title {
+    @include underline($text-secondary, 4px, 2px);
+}
+
+.news__item-subtitle {
+    position: relative;
+    z-index: 2;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.news__item--second .news__item-subtitle {
+    max-width: 400px;
+}

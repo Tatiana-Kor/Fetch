@@ -1,0 +1,41 @@
+{% set news = [
+    { class: 'first', title: 'Лукбук, лето 2019', subtitle: 'Стильные образы для тёплых деньков', 
+    img: '01', width: '443', src: '#', type: 'jpg'},
+    { class: 'second', title: 'Выбор редакции: часы', subtitle: 'ТОП-5 лучших предложений по версии администрации&nbsp;Фетч'},
+    { class: 'third', title: 'Новая коллекция adidas Originals', subtitle: 'Десять крутейших кроссовок', 
+    img: '02', width: '700', src: '#', type: 'png'},
+    { class: 'fourth', title: 'Предзаказ: Maison Margiela Fusion', subtitle: 'От 92 000 &#8381;', 
+    img: '03', width: '1136', src: '#', type: 'jpg'},
+] %}
+
+<section class="news__wrapper container" itemscope itemtype="https://schema.org/NewsArticle">
+    {% for new in news %}
+        <a href="{{new.src}}" class="news__item news__item--{{new.class}}" itemprop="url">
+            <article class="news-item__wrapper">
+                <div class="news__item-titles">
+                    <h2 class="news__item-title" itemprop="name">{{new.title}}</h2>
+                    <p class="news__item-subtitle" itemprop="about">{{new.subtitle}}</p>
+                </div>
+                {% if new.img %}
+                    <picture>
+                        <source media="(max-width: 1199px)" 
+                                srcset="assets/images/news/news-mobile{{new.img}}.webp"
+                                type="image/webp"
+                        >
+                        <source srcset="assets/images/news/news{{new.img}}.webp"
+                                type="image/webp"
+                        >
+                        <source media="(max-width: 1199px)" 
+                                srcset="assets/images/news/news-mobile{{new.img}}.{{new.type}}"
+                                type="image/{{new.type}}"  
+                        >
+                        <source srcset="assets/images/news/news{{new.img}}.{{new.type}}"
+                                type="image/{{new.type}}"
+                        >
+                        <img src="#" alt="{{new.title}}" itemprop="image">
+                    </picture>
+                {% endif %}
+            </article>
+        </a>
+    {% endfor %}
+</section>

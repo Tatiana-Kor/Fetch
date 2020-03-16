@@ -1,0 +1,31 @@
+.navigation__list {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__link > a {
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navigation__sublist {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+    align-items: flex-start;
+}
+
+.navigation__sublink {
+    margin-bottom: 8px; 
+}
+
+.navigation__sublink br {
+    display: none;
+    
+    @media(max-width: $desktop-width) {
+       display: block; 
+    }
+}
+
