@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/fonts/pt-sans-v11-cyrillic_latin-regular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Фетч — мультибрендовый магазин модной одежды. Следим за трендами и часто обновляем ассортимент. 
+    Доставляем по Москве за день, по России — за неделю.">
+    <title>Фетч — главная</title>
+</head>
+
+<body>
+    <header class="header js-header">
+        <div class="header__wrapper container">
+            <a href="index.html" class="header__logo">Фетч</a>
+            <ul class="header__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Одежда</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="shoes.html" itemprop="url">Обувь</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Аксессуары</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Блог</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="about.html" itemprop="url">Магазин</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Доставка и оплата</a></li>
+            </ul>
+            <div class="header__cart-block">
+                <div class="header__cart-icon">
+                </div>
+
+                <div class="header__cart-counter"><span>0<span></div>
+                <a href="checkout.html" class="header__cart-link">Оформить заказ</a>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+
+        <section class="promo-slider js-promo-slider">
+
+            <div class="promo-slider__item" itemscope itemtype="http://schema.org/Product" data-theme="light">
+                <picture>
+                    <source class="js-lazy" media="(max-width: 550px)" srcset="assets/images/promo/promo-mobile01.webp" type="image/webp">
+
+                    <source class="js-lazy" srcset="assets/images/promo/promo01.webp" type="image/webp">
+
+                    <source class="js-lazy" media="(max-width: 550px)" srcset="assets/images/promo/promo-mobile01.jpg" type="image/jpeg">
+
+                    <source class="js-lazy" srcset="assets/images/promo/promo01.jpg" type="image/jpeg">
+
+                    <img class="promo-slider__image" itemprop="image" src="#" alt="Промо - Reebok Aztrek Double" width="auto" height="600">
+                </picture>
+                <div class="container">
+                    <div class="promo-slider__slogan-wrapper">
+                        <span class="promo-slider__slogan promo-slider__slogan--desktop" itemprop="slogan">Reebok Aztrek Double</span>
+                        <span class="promo-slider__slogan promo-slider__slogan--mobile">Распродажа до –15%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-slider__item" itemscope itemtype="http://schema.org/Product" data-theme="dark">
+                <picture>
+                    <source class="js-lazy" media="(max-width: 550px)" data-srcset="assets/images/promo/promo-mobile02.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" data-srcset="assets/images/promo/promo02.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" media="(max-width: 550px)" data-srcset="assets/images/promo/promo-mobile02.jpg" srcset="assets/images/placeholder.webp" type="image/jpeg">
+
+                    <source class="js-lazy" data-srcset="assets/images/promo/promo02.jpg" type="image/jpeg" srcset="assets/images/placeholder.webp">
+
+                    <img class="promo-slider__image" itemprop="image" src="#" alt="Промо - Reebok Aztrek Double" width="auto" height="600">
+                </picture>
+                <div class="container">
+                    <div class="promo-slider__slogan-wrapper">
+                        <span class="promo-slider__slogan promo-slider__slogan--desktop" itemprop="slogan">Reebok Aztrek Double</span>
+                        <span class="promo-slider__slogan promo-slider__slogan--mobile">Распродажа до –15%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-slider__item" itemscope itemtype="http://schema.org/Product" data-theme="dark">
+                <picture>
+                    <source class="js-lazy" media="(max-width: 550px)" data-srcset="assets/images/promo/promo-mobile03.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" media="(max-width: 800px)" data-srcset="assets/images/promo/promo-tablet03.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" data-srcset="assets/images/promo/promo03.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" media="(max-width: 550px)" data-srcset="assets/images/promo/promo-mobile03.jpg" srcset="assets/images/placeholder.webp" type="image/jpeg">
+
+                    <source class="js-lazy" media="(max-width: 800px)" data-srcset="assets/images/promo/promo-tablet03.jpg" type="image/jpeg" srcset="assets/images/placeholder.webp">
+
+                    <source class="js-lazy" data-srcset="assets/images/promo/promo03.jpg" type="image/jpeg" srcset="assets/images/placeholder.webp">
+
+                    <img class="promo-slider__image" itemprop="image" src="#" alt="Промо - Nike ACG: навстречу новым открытиям" width="auto" height="600">
+                </picture>
+                <div class="container">
+                    <div class="promo-slider__slogan-wrapper">
+                        <span class="promo-slider__slogan promo-slider__slogan--desktop" itemprop="slogan">Nike ACG: навстречу новым открытиям</span>
+                        <span class="promo-slider__slogan promo-slider__slogan--mobile">Распродажа до –15%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-slider__item" itemscope itemtype="http://schema.org/Product" data-theme="dark">
+                <picture>
+                    <source class="js-lazy" media="(max-width: 550px)" data-srcset="assets/images/promo/promo-mobile04.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" data-srcset="assets/images/promo/promo04.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+
+                    <source class="js-lazy" media="(max-width: 550px)" data-srcset="assets/images/promo/promo-mobile04.jpg" srcset="assets/images/placeholder.webp" type="image/jpeg">
+
+                    <source class="js-lazy" data-srcset="assets/images/promo/promo04.jpg" type="image/jpeg" srcset="assets/images/placeholder.webp">
+
+                    <img class="promo-slider__image" itemprop="image" src="#" alt="Промо - Nike ACG: навстречу новым открытиям" width="auto" height="600">
+                </picture>
+                <div class="container">
+                    <div class="promo-slider__slogan-wrapper">
+                        <span class="promo-slider__slogan promo-slider__slogan--desktop" itemprop="slogan">Nike ACG: навстречу новым открытиям</span>
+                        <span class="promo-slider__slogan promo-slider__slogan--mobile">Распродажа до –15%</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-nav">
+            <div class="main-nav__wrapper container">
+                <div class="main-nav__about-us" itemscope itemtype="https://schema.org/Organization">
+                    <p><b itemprop="name">Фетч</b> — мультибрендовый магазин модной одежды.</p>
+                    <p>Следим за трендами и часто обновляем ассортимент.</p>
+                    <p>Доставляем по Москве за день, по России — за неделю.
+                        <meta itemprop="areaServed" itemscope itemtype="https://schema.org/City" content="Москва, все города России">
+                    </p>
+                </div>
+                <nav class="main-nav__block navigation">
+
+                    <ul class="navigation__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Для мужчин
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Верхняя одежда
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Рубашки и поло
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Трикотаж
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Брюки и джинсы
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бельё и носки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Для женщин
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Верхняя одежда
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Рубашки и поло
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Трикотаж
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Платья и юбки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бельё и носки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="shoes.html" itemprop="url">Обувь
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Кроссовки и кеды
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Ботинки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Аксессуары
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Сумки и рюкзаки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Часы
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бижутерия
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Средства<br> для ухода
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Скидки
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Летняя распродажа
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Коллекция 2018
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="news">
+
+            <section class="news__wrapper container" itemscope itemtype="https://schema.org/NewsArticle">
+
+                <a href="#" class="news__item news__item--first" itemprop="url">
+                    <article class="news-item__wrapper">
+                        <div class="news__item-titles">
+                            <h2 class="news__item-title" itemprop="name">Лукбук, лето 2019</h2>
+                            <p class="news__item-subtitle" itemprop="about">Стильные образы для тёплых деньков</p>
+                        </div>
+
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="assets/images/news/news-mobile01.webp" type="image/webp">
+                            <source srcset="assets/images/news/news01.webp" type="image/webp">
+                            <source media="(max-width: 1199px)" srcset="assets/images/news/news-mobile01.jpg" type="image/jpg">
+                            <source srcset="assets/images/news/news01.jpg" type="image/jpg">
+                            <img src="#" alt="Лукбук, лето 2019" itemprop="image">
+                        </picture>
+
+                    </article>
+                </a>
+
+                <a href="" class="news__item news__item--second" itemprop="url">
+                    <article class="news-item__wrapper">
+                        <div class="news__item-titles">
+                            <h2 class="news__item-title" itemprop="name">Выбор редакции: часы</h2>
+                            <p class="news__item-subtitle" itemprop="about">ТОП-5 лучших предложений по версии администрации Фетч</p>
+                        </div>
+
+                    </article>
+                </a>
+
+                <a href="#" class="news__item news__item--third" itemprop="url">
+                    <article class="news-item__wrapper">
+                        <div class="news__item-titles">
+                            <h2 class="news__item-title" itemprop="name">Новая коллекция adidas Originals</h2>
+                            <p class="news__item-subtitle" itemprop="about">Десять крутейших кроссовок</p>
+                        </div>
+
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="assets/images/news/news-mobile02.webp" type="image/webp">
+                            <source srcset="assets/images/news/news02.webp" type="image/webp">
+                            <source media="(max-width: 1199px)" srcset="assets/images/news/news-mobile02.png" type="image/png">
+                            <source srcset="assets/images/news/news02.png" type="image/png">
+                            <img src="#" alt="Новая коллекция adidas Originals" itemprop="image">
+                        </picture>
+
+                    </article>
+                </a>
+
+                <a href="#" class="news__item news__item--fourth" itemprop="url">
+                    <article class="news-item__wrapper">
+                        <div class="news__item-titles">
+                            <h2 class="news__item-title" itemprop="name">Предзаказ: Maison Margiela Fusion</h2>
+                            <p class="news__item-subtitle" itemprop="about">От 92 000 ₽</p>
+                        </div>
+
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="assets/images/news/news-mobile03.webp" type="image/webp">
+                            <source srcset="assets/images/news/news03.webp" type="image/webp">
+                            <source media="(max-width: 1199px)" srcset="assets/images/news/news-mobile03.jpg" type="image/jpg">
+                            <source srcset="assets/images/news/news03.jpg" type="image/jpg">
+                            <img src="#" alt="Предзаказ: Maison Margiela Fusion" itemprop="image">
+                        </picture>
+
+                    </article>
+                </a>
+
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__top">
+
+                <div class="footer__contacts contacts" itemscope itemtype="https://schema.org/Organization">
+                    <a class="footer__contacts-fetch" href="#" itemprop="brand">Фетч</a>
+                    <ul class="footer__main-links" itemprop="contactPoint" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                        <li class="footer__main-link" itemprop="name"><a href="about.html" itemprop="url">Магазин</a></li>
+                        <li class="footer__main-link" itemprop="name"><a href="#" itemprop="url">Блог</a></li>
+                        <li class="footer__main-link" itemprop="name"><a href="#" itemprop="url">Доставка и оплата</a></li>
+                    </ul>
+                    <a class="footer__contacts-email contacts__email" href="mailto:shop@fetch.ru" itemprop="email">shop@fetch.ru</a>
+                    <a class="footer__contacts-phone contacts__phone" href="tel:+78009121142" itemprop="telephone">8 800 912-11-42</a>
+                    <p>Звонок бесплатный</p>
+                </div>
+                <nav class="footer__nav navigation">
+
+                    <ul class="navigation__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Для мужчин
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Верхняя одежда
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Рубашки и поло
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Трикотаж
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Брюки и джинсы
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бельё и носки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Для женщин
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Верхняя одежда
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Рубашки и поло
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Трикотаж
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Платья и юбки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бельё и носки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="shoes.html" itemprop="url">Обувь
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Кроссовки и кеды
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Ботинки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Аксессуары
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Сумки и рюкзаки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Часы
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бижутерия
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Средства<br> для ухода
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Скидки
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Летняя распродажа
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Коллекция 2018
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <span>© Фетч-команда, 2019</span>
+                <a href="#">Правила обработки персональных данных</a>
+                <a href="#">Разработка и поддержка сайта</a>
+            </div>
+        </div>
+
+        <footer>
+
+            <script src="js/api.js"></script>
+            <script src="js/lib/jquery-3.4.1.min.js"></script>
+            <script src="js/lib/slick.min.js"></script>
+            <script src="js/lib/popup.js"></script>
+            <script src="js/scripts.js"></script>
+</body>
+
+</html>

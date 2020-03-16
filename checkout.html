@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/fonts/pt-sans-v11-cyrillic_latin-regular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Фетч — мультибрендовый магазин модной одежды. Следим за трендами и часто обновляем ассортимент. 
+    Доставляем по Москве за день, по России — за неделю.">
+    <title>Фетч — Оформление заказа</title>
+
+</head>
+
+<body>
+    <header class="header-checkout--success hidden">
+        <div class="header__wrapper container">
+            <a href="index.html" class="header__logo">Фетч</a>
+            <ul class="header__nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Одежда</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="shoes.html" itemprop="url">Обувь</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Аксессуары</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Блог</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="about.html" itemprop="url">Магазин</a></li>
+                <li class="header__nav-link" itemprop="name"><a href="#" itemprop="url">Доставка и оплата</a></li>
+            </ul>
+            <div class="header__cart-block">
+                <div class="header__cart-icon">
+                </div>
+
+                <div class="header__cart-counter"><span>0<span></div>
+                <a href="checkout.html" class="header__cart-link">Оформить заказ</a>
+            </div>
+        </div>
+
+    </header>
+    <main class="main-checkout">
+        <div class="main-checkout__wrapper main-checkout__wrapper--incomplete container">
+
+            <ul class="main-checkout__navigation" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">Фетч</span>
+                        <span class="main-checkout__navigation-separator">• </span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                        <span itemprop="name">Оформление заказа</span>
+                        <meta itemprop="position" content="2">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="main-checkout__block main-checkout__block--incomplete">
+                <div class="main-checkout__cart">
+                    <div class="main-checkout__cart-items">
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes11.webp" type="image/webp">
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes11.jpg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="item01.html" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes17.webp" type="image/webp">
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes17.jpg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="item01.html" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes01.webp" type="image/webp">
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes01.jpg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="item01.html" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main-checkout__cart-total" itemscope itemtype="http://schema.org/Offer">
+                        <p class="main-checkout__cart-sum"><span itemprop="price">276 000</span> ₽
+                            <meta itemprop="priceCurrency" content="RUB">
+                        </p>
+                        <p class="main-checkout__cart-delivery">Доставка бесплатно</p>
+                    </div>
+                </div>
+
+                <div class="main-checkout__form-wrapper">
+                    <form class="main-checkout__form checkout-form js-checkout" action="">
+                        <div class="checkout-form__field-wrapper">
+                            <label for="checkoutEmail">Эл.почта</label>
+                            <input class="checkout-form__field checkout-form__field--email js-field" id="checkoutEmail" type="email" placeholder="petrov@yandex.ru" name="formEmail" required>
+                        </div>
+
+                        <div class="checkout-form__field-wrapper">
+                            <label for="checkoutPhone">Телефон</label>
+                            <input class="checkout-form__field checkout-form__field--phone js-field" id="checkoutPhone" type="tel" placeholder="+7 999 275-12-37" name="formPhone" required>
+                        </div>
+                        <div class="checkout-form__field-wrapper">
+                            <label for="checkoutCity">Город</label>
+                            <input class="checkout-form__field checkout-form__field--city js-field" id="checkoutCity" type="text" placeholder="Москва" name="formCity" required>
+                        </div>
+                        <div class="checkout-form__field-wrapper">
+                            <label for="checkoutAddress">Адрес</label>
+                            <textarea class="checkout-form__field checkout-form__field--address js-field" id="checkoutAddress" type="text" placeholder="Тимирязевская, 32б квартира 99, вход со двора" name="formAddress" required></textarea>
+                        </div>
+                        <div class="checkout-form__complete">
+                            <span>Бесплатная доставка курьером. Оплата картой онлайн.</span>
+                            <div class="checkout-form__complete-btn btn-wrapper">
+                                <button type="submit" class="checkout-btn btn">Оформить заказ, <span>276 000</span> ₽</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main-checkout__wrapper main-checkout__wrapper--complete hidden container">
+            <p class="main-checkout__complete-title">Заказ №<span>213<span> оформлен</p>
+            <div class="main-checkout__block main-checkout__block--complete">
+
+                <p class="main-checkout__complete-info">Скоро вам позвонит менеджер, чтобы подтвердить заказ.</p>
+                <p class="main-checkout__complete-info"><a href="index.html">Вернуться на главную</a> или <a href="shoes.html">продолжить покупки в каталоге</a></p>
+
+                <section class="main-checkout__recommend recommendation">
+                    <div class="item-recommend__wrapper">
+                        <h2 class="item-recommend__title">Вам может быть интересно</h2>
+                    </div>
+
+                    <div class="item-recommend__slider js-item-recommend">
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes05.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes05.jpg" srcset="assets/images/placeholder.jpeg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes04.webp" type="image/webp">
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes04.jpg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes03.webp" type="image/webp">
+                                <source class="js-lazy" srcset="assets/images/shoes/shoes03.jpg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes11.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes11.jpg" srcset="assets/images/placeholder.jpeg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes12.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes12.jpg" srcset="assets/images/placeholder.jpeg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes07.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes07.jpg" srcset="assets/images/placeholder.jpeg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes13.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes13.jpg" srcset="assets/images/placeholder.jpeg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes08.webp" srcset="assets/images/placeholder.webp" type="image/webp">
+                                <source class="js-lazy" data-srcset="assets/images/shoes/shoes08.jpg" srcset="assets/images/placeholder.jpeg" type="image/jpeg">
+                                <img src="#" alt="Кроссовки Maison Margiela Fusion Low Sneakers" class="catalog__item-image" itemprop="image">
+                            </picture>
+                            <div class="catalog__item-description" itemprop="description">
+                                <a href="#" class="catalog__item-name" itemprop="url"><span itemprop="name">Maison Margiela Fusion Low Sneakers</span></a>
+                                <p class="catalog__item-category" itemprop="category">Кроссовки</p>
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <p class="catalog__item-price" itemprop="price">92 000 ₽
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-checkout footer-checkout--incomplete">
+        <div class="footer-checkout__wrapper container">
+            <span>© Фетч-команда, 2019</span>
+            <a class="footer-checkout__phone" href="tel:+78009121142" itemprop="telephone">8 800 912-11-42, звонок бесплатный</a>
+            <a class="footer-checkout__email" href="mailto:shop@fetch.ru" itemprop="email">shop@fetch.ru</a>
+            <a href="#">Правила обработки персональных данных</a>
+        </div>
+    </footer>
+
+    <footer class="footer footer-checkout footer-checkout--complete hidden">
+        <div class="footer__wrapper container">
+            <div class="footer__top">
+
+                <div class="footer__contacts contacts" itemscope itemtype="https://schema.org/Organization">
+                    <a class="footer__contacts-fetch" href="#" itemprop="brand">Фетч</a>
+                    <ul class="footer__main-links" itemprop="contactPoint" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                        <li class="footer__main-link" itemprop="name"><a href="about.html" itemprop="url">Магазин</a></li>
+                        <li class="footer__main-link" itemprop="name"><a href="#" itemprop="url">Блог</a></li>
+                        <li class="footer__main-link" itemprop="name"><a href="#" itemprop="url">Доставка и оплата</a></li>
+                    </ul>
+                    <a class="footer__contacts-email contacts__email" href="mailto:shop@fetch.ru" itemprop="email">shop@fetch.ru</a>
+                    <a class="footer__contacts-phone contacts__phone" href="tel:+78009121142" itemprop="telephone">8 800 912-11-42</a>
+                    <p>Звонок бесплатный</p>
+                </div>
+                <nav class="footer__nav navigation">
+
+                    <ul class="navigation__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Для мужчин
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Верхняя одежда
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Рубашки и поло
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Трикотаж
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Брюки и джинсы
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бельё и носки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Для женщин
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Верхняя одежда
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Рубашки и поло
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Трикотаж
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Платья и юбки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бельё и носки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="shoes.html" itemprop="url">Обувь
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Кроссовки и кеды
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Ботинки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Аксессуары
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Сумки и рюкзаки
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Часы
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Бижутерия
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Средства<br> для ухода
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="navigation__link" itemprop="name">
+                            <a href="#" itemprop="url">Скидки
+                                <meta itemprop="position" content="1">
+                            </a>
+                            <ul class="navigation__sublist" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Летняя распродажа
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sublink" itemprop="name">
+                                    <a href="#" itemprop="url">Коллекция 2018
+                                        <meta itemprop="position" content="2">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <span>© Фетч-команда, 2019</span>
+                <a href="#">Правила обработки персональных данных</a>
+                <a href="#">Разработка и поддержка сайта</a>
+            </div>
+        </div>
+
+    </footer>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/popup.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
