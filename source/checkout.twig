@@ -36,7 +36,7 @@
             </ul>
             
             <div class="main-checkout__block main-checkout__block--incomplete">
-                <div class="main-checkout__cart">
+                <section class="main-checkout__cart">
                     <div class="main-checkout__cart-items">
                         {% set folder = 'shoes' %}
                         {% set category = 'Кроссовки' %}
@@ -55,11 +55,11 @@
                         <p class="main-checkout__cart-sum"><span itemprop="price">276 000</span> &#8381; <meta itemprop="priceCurrency" content="RUB"></p>
                         <p class="main-checkout__cart-delivery">Доставка бесплатно</p>
                     </div>
-                </div>
+                </section>
             
-                <div class="main-checkout__form-wrapper">
+                <section class="main-checkout__form-wrapper">
                     {% include 'blocks/checkout-form.twig' %}
-                </div>
+                </section>
             </div>
         </div>
         <div class="main-checkout__wrapper main-checkout__wrapper--complete hidden container">
